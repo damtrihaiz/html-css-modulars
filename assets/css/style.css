@@ -10,4 +10,126 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    /* background: #efefef; */
+}
+
+:root {
+    --primary-color-black: #152427;
+    --primary-color-black-green: #143c3c;
+    --text-color-black-gray: #575d5e;
+    --scondery-color-light-green: #e2eddf;
+    --text-color-light-gray: #7d8188;
+    --text-color-white: #fff;
+}
+
+/* ==========Common=========== */
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 173px;
+    height: 57px;
+    color: var(--text-color-white);
+    font-family: "Public Sans";
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 57px;
+    padding: 0 20px;
+    border-radius: 40px;
+    background: var(--primary-color-black-green);
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.desc {
+    color: var(--text-color-light-gray, #7d8188);
+    font-weight: 500;
+}
+.desc.sans {
+    font-family: "Public Sans";
+}
+.desc.lv1 {
+    font-size: 1.8rem;
+    line-height: 1.56;
+}
+.desc.lv2 {
+    font-size: 1.6rem;
+    line-height: 1.63;
+}
+.desc.lv3 {
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+
+/* ============Header============ */
+.header {
+    position: sticky;
+    top: -16px;
+    z-index: 1;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    padding-top: 28px;
+}
+
+.navbar {
+    margin-left: auto;
+}
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar__link.active {
+    color: var(--primary-color-black);
+}
+
+.navbar__link.active::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 2px;
+    left: 20px;
+    bottom: -28px;
+    background: var(--primary-color-black-green, #143c3c);
+}
+
+.navbar__link:hover {
+    color: var(--primary-color-black);
+}
+
+.header-action__btn {
+    border: 1.5px solid #143c3c;
+    margin-left: 68px;
+}
+
+.header-divider {
+    margin-top: 12px;
+    height: 1px;
+    background: linear-gradient(
+        18deg,
+        #fff 0%,
+        #dddcdc 51.25%,
+        rgba(212, 212, 212, 0) 100%
+    );
 }
