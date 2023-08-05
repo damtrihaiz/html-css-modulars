@@ -10,7 +10,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    /* background: #efefef; */
+    background: #efefef;
 }
 
 :root {
@@ -49,8 +49,16 @@ a {
 }
 
 .btn:hover {
+    background-color: #83a17d;
     opacity: 0.9;
     cursor: pointer;
+}
+
+.section-heading {
+    color: var(--primary-color-black, #152427);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
 }
 
 .desc {
@@ -119,7 +127,7 @@ a {
 }
 
 .header-action__btn {
-    border: 1.5px solid #143c3c;
+    /* border: 1.5px solid #143c3c; */
     margin-left: 68px;
 }
 
@@ -132,4 +140,145 @@ a {
         #dddcdc 51.25%,
         rgba(212, 212, 212, 0) 100%
     );
+}
+
+/* ============Hero============ */
+
+.hero {
+}
+
+.hero-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__heading {
+    color: var(--primary-color-black, #152427);
+    max-width: 368px;
+    font-family: "Public Sans";
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero__desc {
+    max-width: 341px;
+    margin-top: 20px;
+}
+
+.hero-row {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+.hero__play {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.hero__play:hover .hero__play__text {
+    color: #83a17d;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.hero__play:hover .hero__play__btn {
+    animation: rotate 3s linear infinite; /* Tạo hiệu ứng xoay tròn */
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hero__play__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #83a17d;
+    transform: rotate(45deg);
+}
+
+.hero__play__btn {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: transparent;
+    border: 5px solid;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(-45deg);
+}
+
+.hero__play__text {
+    color: #152427;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.hero__media {
+    position: relative;
+    width: 61%;
+    display: flex;
+    padding: 60px 25px 60px;
+}
+
+.hero__media__bg {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    top: 154px;
+    right: 150px;
+    border-radius: 50%;
+    background: #4dbb9a;
+    filter: blur(137px);
+    z-index: -1;
+}
+
+.hero__images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero__img {
+    width: 202px;
+    height: 466px;
+    border-radius: 110px;
+    object-fit: cover;
+}
+
+.hero__img:nth-child(2) {
+    margin-top: 77px;
+}
+
+.curvedGraphic-top {
+    width: 545px;
+    position: absolute;
+    top: 28px;
+    right: 320px;
+}
+
+.curvedGraphic-bottom {
+    width: 545px;
+    position: absolute;
+    transform: rotate(176deg);
+    bottom: 0;
+    right: 65px;
 }
