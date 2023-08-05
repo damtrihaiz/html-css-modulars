@@ -282,3 +282,67 @@ a {
     bottom: 0;
     right: 65px;
 }
+
+/* ===============Logo section========== */
+
+.logo-section {
+    margin-top: 42px;
+}
+
+.logo-section__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 76px 121px;
+    border-radius: 100.5px;
+    background: var(--scondery-color-light-green, #e2eddf);
+}
+
+.logo-section__item {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section__item:hover {
+    opacity: 0.9;
+}
+
+.google-item {
+    color: var(--primary-color-black-green, #143c3c);
+    font-size: 3.1rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.slack-item {
+    color: var(--primary-color-black-green, #143c3c);
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: normal;
+    gap: 5px;
+}
+
+.agworld-item {
+    color: #163c35;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: normal;
+    gap: 11px;
+}
+
+.riotino-item {
+    color: var(--primary-color-black-green, #143c3c);
+    font-family: "Sonsie One";
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.heroku-item {
+    color: var(--primary-color-black-green, #143c3c);
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.995px;
+    gap: 14px;
+}
