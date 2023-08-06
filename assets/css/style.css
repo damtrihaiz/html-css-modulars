@@ -177,6 +177,7 @@ a {
     display: flex;
     align-items: center;
     gap: 7px;
+    transition: 0.25s;
 }
 
 .hero__play:hover .hero__play__text {
@@ -268,14 +269,14 @@ a {
     margin-top: 77px;
 }
 
-.curvedGraphic-top {
+.hero__curvedGraphic-top {
     width: 545px;
     position: absolute;
     top: 28px;
     right: 320px;
 }
 
-.curvedGraphic-bottom {
+.hero__curvedGraphic-bottom {
     width: 545px;
     position: absolute;
     transform: rotate(176deg);
@@ -458,10 +459,12 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.3s;
 }
 
 .service-item__info {
     padding: 24px 0 15px;
+    transition: 0.3s;
 }
 
 .service-item__heading {
@@ -474,4 +477,184 @@ a {
 .service-item__desc {
     margin-top: 18px;
     max-width: 268px;
+}
+
+/* =============About============== */
+
+.about {
+    margin-top: 157px;
+}
+
+.about-body {
+    display: flex;
+}
+.about__block {
+    position: relative;
+}
+
+.about__images {
+    width: 52%;
+    margin-top: 13px;
+    display: flex;
+    gap: 12px;
+}
+
+.about__img:first-child {
+    margin-top: 77px;
+}
+
+.about__img {
+    width: 284px;
+    height: 480px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 210px;
+    box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+
+.about__curvedGraphic {
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    transform: rotate(12.645deg);
+}
+
+.about-content {
+    margin-left: 64px;
+}
+
+.about-card {
+    position: absolute;
+    bottom: 8px;
+    right: -9px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+    padding: 19px 17px 11px;
+}
+
+.about-card__heading {
+    color: var(--primary-color-black, #152427);
+    font-family: "Public Sans";
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.about-card__desc {
+    color: var(--text-color-black-gray, #575d5e);
+    font-family: "Public Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 6px;
+    opacity: 0.4;
+}
+
+.about-card__common {
+    color: var(--primary-color-black, #152427);
+    font-family: "Public Sans";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.about-card__progress {
+    position: relative;
+    width: 96px;
+    height: 2px;
+    border-radius: 10px;
+    background: #eaeaea;
+    margin: 3px 0;
+}
+
+.about-card__progress::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    left: 0;
+    border-radius: 10px;
+    background: #83a17d;
+}
+
+.about_card__load {
+    margin-left: 52px;
+}
+
+.about-card__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 0 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #eaeaea;
+}
+
+.about-card__circle::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--primary-color-black-green);
+}
+
+.about-card__team {
+    display: flex;
+    align-items: center;
+}
+
+.about-card__team__avatar {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.about-card__team__img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    margin-left: -6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.about-content__title {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color-black, #152427);
+    font-size: 1.6;
+    font-weight: 500;
+    line-height: 1.13;
+    margin-bottom: 20px;
+}
+
+.about-content__title::before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 1px;
+    margin-right: 21px;
+    background: var(--primary-color-black);
+}
+
+.about-content__desc {
+    margin-top: 11px;
+}
+
+.about-content__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #83a17d;
+}
+
+.about-content__info {
+    max-width: 364px;
+    margin-left: 24px;
 }
