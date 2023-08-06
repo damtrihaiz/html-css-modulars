@@ -248,14 +248,15 @@
             <section class="service">
                 <div class="container">
                     <section class="service-top">
-                        <div class="service-top__content">
-                            <h3 class="service-top__title desc lv2">
+                        <section class="content">
+                            <h3 class="content__title desc lv2">
                                 OUR SERVICES
                             </h3>
-                            <h2 class="service-top__heading section-heading">
+                            <h2 class="content__heading section-heading">
                                 We offer a wide range of design services
+                                <span class="content__heading__line"></span>
                             </h2>
-                        </div>
+                        </section>
                         <div class="service-top__control">
                             <button class="service-top__control__btn">
                                 <svg
@@ -470,6 +471,90 @@
                     </div>
                 </div>
             </section>
+            <!-- Process-->
+            <section class="process">
+                <div class="process-container container">
+                    <section class="content">
+                        <h3 class="content__title desc lv2">OUR PROCESS</h3>
+                        <h2 class="content__heading section-heading">
+                            A simple ,yet effective three step process
+                            <span class="content__heading__line"></span>
+                        </h2>
+                    </section>
+                    <div class="process__list">
+                        <!-- process-item 1 -->
+                        <div class="process-item">
+                            <div class="process-item__number">01.</div>
+                            <div class="process-item__name process-item__idead">
+                                <h3 class="process-item__heading">
+                                    Project idea
+                                </h3>
+                                <a href="#!" class="process-item__more"
+                                    >Learn More</a
+                                >
+                            </div>
+                            <span class="process-item__transparent"></span>
+                            <!-- <a href="#!" class="process-item__link"
+                                    >Learn More</a -->
+                            <figure>
+                                <img
+                                    src="./assets/img/process.png"
+                                    alt="Project idea"
+                                    class="process__img"
+                                />
+                            </figure>
+                        </div>
+                        <!-- process-item 2 -->
+                        <div class="process-item">
+                            <div class="process-item__number">02.</div>
+                            <div class="process-item__name">
+                                <h3 class="process-item__heading">
+                                    Brainstormaing
+                                </h3>
+                                <a href="#!" class="process-item__more"
+                                    >Learn More</a
+                                >
+                            </div>
+                            <p class="process-item__desc desc lv1">
+                                We customse a ensure aligment and difine key
+                                mileones and defiverables experience tells us
+                                the best solutions are the ones deated with
+                                clients.
+                            </p>
+                        </div>
+                        <!-- process-item 3 -->
+                        <div class="process-item">
+                            <div class="process-item__number">03.</div>
+                            <div class="process-item__name">
+                                <h3 class="process-item__heading">Execution</h3>
+                                <a href="#!" class="process-item__more"
+                                    >Learn More</a
+                                >
+                            </div>
+                            <p class="process-item__desc desc lv1">
+                                We customse a ensure aligment and difine key
+                                mileones and defiverables experience tells us
+                                the best solutions are the ones deated with
+                                clients.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        <script>
+            document.addEventListener("scroll", function () {
+                var header = document.querySelector(".header");
+                var scrollPosition = window.scrollY;
+
+                // Điều kiện kiểm tra khi nào nên thêm/xóa lớp 'scrolled'
+                if (scrollPosition > 100) {
+                    // Ví dụ, nếu cuộn xuống 100px thì thêm lớp
+                    header.classList.add("scrolled");
+                } else {
+                    header.classList.remove("scrolled");
+                }
+            });
+        </script>
     </body>
 </html>
