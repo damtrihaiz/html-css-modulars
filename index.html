@@ -249,12 +249,10 @@
                 <div class="container">
                     <section class="service-top">
                         <section class="content">
-                            <h3 class="content__title desc lv2">
-                                OUR SERVICES
-                            </h3>
-                            <h2 class="content__heading section-heading">
+                            <h3 class="section__title">OUR SERVICES</h3>
+                            <h2 class="service__heading section-heading">
                                 We offer a wide range of design services
-                                <span class="content__heading__line"></span>
+                                <span class="section__heading__line"></span>
                             </h2>
                         </section>
                         <div class="service-top__control">
@@ -435,8 +433,8 @@
                             </section>
                         </div>
                         <section class="about-content">
-                            <h3 class="about-content__title">ABOUT US</h3>
-                            <h2 class="about-content__heading section-heading">
+                            <h3 class="section__title">ABOUT US</h3>
+                            <h2 class="about__heading section-heading">
                                 We are an extention of your creative team
                             </h2>
                             <p class="about-content__desc desc lv2">
@@ -475,10 +473,10 @@
             <section class="process">
                 <div class="process-container container">
                     <section class="content">
-                        <h3 class="content__title desc lv2">OUR PROCESS</h3>
-                        <h2 class="content__heading section-heading">
+                        <h3 class="section__title">OUR PROCESS</h3>
+                        <h2 class="process__heading section-heading">
                             A simple ,yet effective three step process
-                            <span class="content__heading__line"></span>
+                            <span class="section__heading__line"></span>
                         </h2>
                     </section>
                     <div class="process__list">
@@ -541,8 +539,104 @@
                     </div>
                 </div>
             </section>
+            <!-- Feature -->
+            <section class="feature">
+                <div class="container">
+                    <div class="feature-row">
+                        <h2 class="feature__heading section-heading">
+                            A quick glance of our past projects
+                            <span
+                                class="feature__heading__line section__heading__line"
+                            ></span>
+                        </h2>
+                        <div class="feature-row__info">
+                            <p class="feature-row__desc desc sans lv1">
+                                Are you strive for the fast project simplicity
+                                and clarity. Great design is born of those two
+                                things.
+                            </p>
+                            <div class="feature-row__browse">
+                                <a
+                                    href="#!"
+                                    class="feature__browse__link desc sans lv1"
+                                    >Browse all Projects</a
+                                >
+                                <button class="feature-row__btn">
+                                    <svg
+                                        class="feature-row__img"
+                                        width="22"
+                                        height="13"
+                                        viewBox="0 0 22 13"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature__video-container">
+                        <video class="feature__video" id="myVideo" controls>
+                            <source
+                                src="./assets/video/feature-video.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                        <button class="feature__play-btn" id="playButton">
+                            <svg
+                                width="27"
+                                height="30"
+                                viewBox="0 0 27 30"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M25.5828 14.1411C26.2513 14.5227 26.256 15.485 25.5912 15.8731L1.65877 29.8459C0.993978 30.2341 0.158321 29.757 0.154581 28.9872L0.0199589 1.2747C0.0162194 0.50491 0.847206 0.0197453 1.51573 0.401403L25.5828 14.1411Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </button>
+                        <img
+                            src="./assets/icons/extra-avstract.svg"
+                            alt=""
+                            class="feature__winged-circle"
+                        />
+                        <img
+                            src="./assets/icons/feature-graphic.svg"
+                            alt=""
+                            class="feature__graphic"
+                        />
+                    </div>
+                </div>
+            </section>
         </main>
         <script>
+            const video = document.getElementById("myVideo");
+            const playButton = document.getElementById("playButton");
+
+            playButton.addEventListener("click", () => {
+                if (video.paused) {
+                    video.play();
+                    playButton.style.display = "none";
+                } else {
+                    video.pause();
+                }
+            });
+
+            video.addEventListener("play", () => {
+                playButton.style.display = "none";
+            });
+
+            video.addEventListener("pause", () => {
+                playButton.style.display = "block";
+            });
             document.addEventListener("scroll", function () {
                 var header = document.querySelector(".header");
                 var scrollPosition = window.scrollY;
