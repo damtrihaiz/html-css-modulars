@@ -17,7 +17,7 @@ body {
     --primary-color-black: #152427;
     --primary-color-black-green: #143c3c;
     --text-color-black-gray: #575d5e;
-    --scondery-color-light-green: #e2eddf;
+    --second-color-light-green: #e2eddf;
     --text-color-light-gray: #7d8188;
     --text-color-white: #fff;
 }
@@ -45,7 +45,7 @@ a {
     line-height: 57px;
     padding: 0 20px;
     border-radius: 40px;
-    background: var(--scondery-color-light-green, #e2eddf);
+    background: var(--second-color-light-green, #e2eddf);
 }
 
 .btn:hover,
@@ -335,7 +335,7 @@ a {
     justify-content: space-around;
     padding: 76px 121px;
     border-radius: 100.5px;
-    background: var(--scondery-color-light-green, #e2eddf);
+    background: var(--second-color-light-green, #e2eddf);
 }
 
 .logo-section__item {
@@ -416,7 +416,7 @@ a {
     height: 54px;
     border-radius: 50%;
     color: var(--primary-color-black);
-    background-color: var(--scondery-color-light-green);
+    background-color: var(--second-color-light-green);
     outline: none;
     border: none;
 }
@@ -721,7 +721,7 @@ a {
 .process-item:hover {
     padding: 72px 20px 54px;
     border-radius: 33px;
-    background: var(--scondery-color-light-green, #e2eddf);
+    background: var(--second-color-light-green, #e2eddf);
 }
 
 .process-item:hover .process-item__more {
@@ -810,7 +810,7 @@ a {
 }
 
 .feature__heading__line {
-    background: var(--scondery-color-blue, #83a17d);
+    background: var(--second-color-blue, #83a17d);
 }
 
 .feature-row {
@@ -820,7 +820,7 @@ a {
 
 .feature-row__desc {
     margin-top: 11px;
-    color: var(--scondery-color-gray, #6a8383);
+    color: var(--second-color-gray, #6a8383);
 }
 
 .feature-row__browse {
@@ -1027,7 +1027,7 @@ a {
     height: 26px;
     line-height: 26px;
     border-radius: 20px;
-    background: var(--scondery-color-light-green, #e2eddf);
+    background: var(--second-color-light-green, #e2eddf);
     color: #000;
     text-align: center;
     font-size: 1rem;
@@ -1053,4 +1053,179 @@ a {
     font-weight: 500;
     line-height: 1.2rem;
     border-top: 1px solid #c4c4c4;
+}
+
+/* ===============Footer============= */
+
+.footer {
+    margin-top: 102px;
+    padding: 72px 0 25px;
+    background: var(--primary-color-black-green, #143c3c);
+}
+
+.footer-body {
+    display: flex;
+    align-items: center;
+    padding-bottom: 45px;
+}
+
+.footer__heading {
+    color: var(--text-color-white, #fff);
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.email-subscribe {
+    margin-top: 15px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.email-subscribe::before {
+    position: absolute;
+    content: "";
+    width: 354px;
+    height: 1px;
+    background: var(--second-color-gray, #6a8383);
+    bottom: 0;
+    left: 0;
+}
+
+.email-input {
+    padding: 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fcfcfc;
+    width: 183px;
+    height: 22px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.email-input::placeholder {
+    color: var(--second-color-gray, #6a8383);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.subscribe-button {
+    margin-left: 112px;
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+}
+
+.subscribe-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.subscribe-button:hover .subscribe-button__arrow {
+    color: #fff;
+}
+
+.subscribe-button__arrow {
+    transform: rotate(180deg);
+    color: #c4c4c4;
+}
+
+.social {
+    margin-top: 47px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #265252;
+}
+
+.social-icon:hover {
+    background: #a75325;
+}
+
+.instagram__circle {
+    width: 7.027px;
+    height: 7.027px;
+    flex-shrink: 0;
+    border-radius: 7.027px;
+    border: 1px solid #fcfcfc;
+}
+.instagram__square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18.27px;
+    height: 18.27px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 2px solid #fcfcfc;
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+    margin-left: auto;
+}
+
+.footer-column__heading {
+    color: var(--text-color-white, #fff);
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.footer-column__list {
+    margin-top: 6px;
+}
+
+.footer-column__item {
+    margin-top: 6px;
+}
+
+.footer-column__item a {
+    color: var(--second-color-gray, #6a8383);
+    font-family: "Public Sans";
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.25;
+}
+
+.footer-column__item a:hover {
+    text-decoration: underline;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        14deg,
+        #143c3c 0%,
+        #295a5a 53.48%,
+        rgba(38, 82, 82, 0) 100%
+    );
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 25px;
+    color: var(--second-color-gray, #6a8383);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.25;
 }
