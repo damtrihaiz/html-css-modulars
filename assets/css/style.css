@@ -37,7 +37,7 @@ a {
     display: inline-block;
     min-width: 173px;
     height: 57px;
-    color: var(--text-color-black-gray);
+    color: var(--text-color-white);
     font-family: "Public Sans";
     text-align: center;
     font-size: 1.8rem;
@@ -45,10 +45,13 @@ a {
     line-height: 57px;
     padding: 0 20px;
     border-radius: 40px;
-    background: var(--second-color-light-green, #e2eddf);
+    background: var(--primary-color-black-green);
 }
 
-.btn:hover,
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
 .blog-item__btn:hover {
     color: #fff;
     background-color: var(--primary-color-black-green);
