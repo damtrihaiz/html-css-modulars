@@ -219,10 +219,13 @@ a {
     transition: 0.25s;
 }
 
+.hero__play :hover {
+    cursor: pointer;
+}
+
 .hero__play:hover .hero__play__text {
     color: #83a17d;
     opacity: 0.9;
-    cursor: pointer;
 }
 
 .hero__play:hover .hero__play__btn {
@@ -719,6 +722,7 @@ a {
 }
 
 .process-item:hover {
+    cursor: pointer;
     padding: 72px 20px 54px;
     border-radius: 33px;
     background: var(--second-color-light-green, #e2eddf);
